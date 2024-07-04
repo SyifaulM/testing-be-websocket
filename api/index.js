@@ -22,7 +22,8 @@ const io = new Server(httpServer, {
         methods: ["GET", "POST"],
         allowedHeaders: ["Content-Type"],
         credentials: true
-    }
+    },
+    addTrailingSlash: false
 });
 
 try {
