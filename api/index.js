@@ -58,10 +58,12 @@ try {
 app.get('/', (req, res) => {
     res.send('Aplikasi Node.js dengan CORS diizinkan dari semua origin');
 });
+// 
+// httpServer.listen(port, () => {
+//     console.log(`Express server listening on port: ${port}...`);
+// });
 
-httpServer.listen(port, () => {
-    console.log(`Express server listening on port: ${port}...`);
-});
+httpServer.listen(port, () => console.log(`Listening on port ${port}`));
 
 export { io };
 export default app;
