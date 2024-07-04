@@ -27,6 +27,7 @@ const io = new Server(httpServer, {
 });
 
 try {
+    app.use(express.static("public"));
     app.use(express.json());
 
     io.on('connection', (socket) => {
