@@ -64,3 +64,4 @@ httpServer.listen(port, () => {
 });
 
 export { io };
+export default app;
